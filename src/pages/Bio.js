@@ -5,7 +5,7 @@ function Bio() {
 
     return (
         <div className='biopage'>
-            <h1 className="biotitle">About Michael</h1>
+            <h1 className="pagetitle">About Michael</h1>
             <div className="infocontainer">
                 <div className="picandbio">
                     <p className="biotext">Michael Curran-Dorsano is an actor and writer, currently living in Belfast, Northern Ireland, UK. In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the

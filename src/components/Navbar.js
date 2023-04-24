@@ -27,16 +27,6 @@ function Navbar({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#Contact"
-            onClick={() => handlePageChange('Contact')}
-            // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'Contact' ? 'nav-link-active' : 'nav-link'}
-          >
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
             href="#FilmAndTV"
             onClick={() => handlePageChange('FilmAndTV')}
             // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -73,6 +63,16 @@ function Navbar({ currentPage, handlePageChange }) {
             className={currentPage === 'Writing' ? 'nav-link-active' : 'nav-link'}
           >
             Writing
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#Contact"
+            onClick={() => handlePageChange('Contact')}
+            // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            className={currentPage === 'Contact' ? 'nav-link-active' : 'nav-link'}
+          >
+            Contact
           </a>
         </li>
       </ul>
