@@ -40,6 +40,7 @@ code {
 
 .biotitle {
   text-align: center;
+  color: rgb(0, 203, 254);
 }
 
 .profilepic {
@@ -71,6 +72,10 @@ code {
   color: rgb(0, 203, 254);
 }
 
+.recentworkcontainer h2 {
+  text-align: center;
+}
+
 .recentwork {
   list-style: none;
 }
@@ -90,4 +95,66 @@ code {
 
 .footer {
   text-align: center;
+}
+
+@media screen and (min-width: 430px) {
+  .biotext {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+  .profilepic {
+    margin-left: 20%;
+  }
+  .specslist {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .biotext {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+  .profilepic {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .biotext {
+    max-width: 45%;
+    margin-left: 5%;
+  }
+  .profilepic {
+    margin-left: 10%;
+  }
+  .specslist {
+    margin-left: 10%;
+    margin-top: -10%;
+  }
+  .workitemtitle {
+    margin-left: 20%;
+  }
+  .recentworkcontainer {
+    margin-top: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .biotext {
+    max-width: 33%;
+  }
+  .profilepic {
+    max-height: 500px;
+  }
+  .specslist {
+    margin-top: -20%;
+  }
+  .recentworkcontainer {
+    margin-top: 20%;
+  }
+  .workitemtitle {
+    margin-left: 25%;
+  }
 }

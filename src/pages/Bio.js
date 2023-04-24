@@ -21,7 +21,9 @@ function Bio() {
                         <li className="listitems">Current Location: <p className="listitemdata">Paddyland</p></li>
                     </ul>
                 </div>
-                <div>Recent Work
+        </div>
+                <div className="recentworkcontainer">
+                    <h2>Recent Work</h2>
                     <ul className="recentwork">
                         <li className="workitemtitle">TV</li>
                         <li className="workitem">TNT | The Last Ship | 2014-2019<p>Gator (Supporting)</p></li>
@@ -40,7 +42,6 @@ function Bio() {
                         <li className="workitem">Julliard<p>Drama Division</p></li>
                     </ul>
                 </div>
-            </div>
         </div>
     )
 
