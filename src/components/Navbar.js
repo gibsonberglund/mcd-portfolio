@@ -5,7 +5,6 @@ import React from 'react';
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <section>
-      <h1 className='sitetitle'>Michael Curran-Dorsano<small className='subtitle'>Actor, Writer, Director</small></h1>
       <ul className="navbar">
         <li className="nav-item">
           <a

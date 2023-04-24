@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+.headertitle {
+  margin-left: 10%;
+}
+
+.subtitle {
+  margin-left: 5%;
+  color: rgb(0, 203, 254);
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 2%;
+}
+
+.biotitle {
+  text-align: center;
+}
+
+.profilepic {
+  max-height: 300px;
+}
+
+.infocontainer {
+  margin-left: 10%;
+}
+
+.picandbio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.biotext {
+  max-width: 90%;
+}
+
+.specslist {
+  list-style: none;
+}
+
+.specslist p {
+  display: inline;
+}
+
+.listitemdata {
+  color: rgb(0, 203, 254);
+}
+
+.recentwork {
+  list-style: none;
+}
+
+.workitemtitle {
+  color: rgb(0, 203, 254);
+  font-size: larger;
+}
+
+.workitem {
+  margin-left: 50%;
+}
+
+.workitem p {
+  color: rgb(0, 203, 254);
+}
+
+.footer {
+  text-align: center;
+}
