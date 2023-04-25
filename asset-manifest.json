@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/mcd-portfolio/static/css/main.7f0d83ce.css",
+    "main.js": "/mcd-portfolio/static/js/main.9b4c2e59.js",
+    "static/media/mcd-pub-vid.mp4": "/mcd-portfolio/static/media/mcd-pub-vid.822f1bf4d3ff75666172.mp4",
+    "static/media/MCD-portfoliopic.jpeg": "/mcd-portfolio/static/media/MCD-portfoliopic.4f90655862875199a136.jpeg",
+    "static/media/crazy-canoe-pic.jpg": "/mcd-portfolio/static/media/crazy-canoe-pic.f2f1bf152b590c66284a.jpg",
+    "static/media/scary-canoe-pic.jpg": "/mcd-portfolio/static/media/scary-canoe-pic.5671484f02a58fd16d2f.jpg",
+    "static/media/mcd-fred-boat-pic.jpg": "/mcd-portfolio/static/media/mcd-fred-boat-pic.64b511ff74f28169b63f.jpg",
+    "static/media/mcd-druid-pic.jpg": "/mcd-portfolio/static/media/mcd-druid-pic.93f6ef85a2ca3ee9841a.jpg",
+    "static/media/mcd-grainy-pic.jpg": "/mcd-portfolio/static/media/mcd-grainy-pic.eaa6cf6b91c7b9e90642.jpg",
+    "static/media/mcd-beach-pic.jpg": "/mcd-portfolio/static/media/mcd-beach-pic.9d48b7b5fb9666bed693.jpg",
+    "static/media/mcd-formal-pic.jpg": "/mcd-portfolio/static/media/mcd-formal-pic.90541147e7315b5fecb0.jpg",
+    "static/media/sandbox-cabin-trip.jpg": "/mcd-portfolio/static/media/sandbox-cabin-trip.2dc79635339e6c983bfb.jpg",
+    "static/media/logo.svg": "/mcd-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mcd-portfolio/index.html",
+    "main.7f0d83ce.css.map": "/mcd-portfolio/static/css/main.7f0d83ce.css.map",
+    "main.9b4c2e59.js.map": "/mcd-portfolio/static/js/main.9b4c2e59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f0d83ce.css",
+    "static/js/main.9b4c2e59.js"
+  ]
+}
