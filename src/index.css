@@ -15,10 +15,12 @@ code {
 * {
   background-color: rgb(61, 61, 61);
   color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .headertitle {
-  margin-left: 10%;
+  text-align: center;
+  margin: 1%;
 }
 
 .subtitle {
@@ -26,16 +28,49 @@ code {
   color: rgb(0, 203, 254);
 }
 
+.navbarcontainer {
+  display: flex;
+  margin-top: -8%;
+  margin-bottom: 8%;
+}
+
 .navbar {
   list-style: none;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
+.navbarleft {
+  width: 33%;
+}
+
+.navbarright {
+  width: 33%;
+  margin-left: 33%;
+}
+
 .nav-item {
   margin: 2%;
+}
+
+.nav-link-active {
+  color: rgb(0, 203, 254);
+}
+
+.dropdownbtn {
+  border-radius: 5%;
+  font-size: 14px;
+}
+
+.navdropmenu {
+  list-style: none;
+}
+
+.navdropmenubtn {
+  font-size: 18px;
 }
 
 .pagetitle {
@@ -58,6 +93,7 @@ code {
 
 .biotext {
   max-width: 90%;
+  font-weight: lighter;
 }
 
 .specslist {
