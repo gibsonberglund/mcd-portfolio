@@ -2,30 +2,54 @@ import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { useState } from "react"
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Fade from '@mui/material/Fade';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function Navbar({ currentPage, handlePageChange }) {
 
-  const [workMenuDisplay, setWorkMenuDisplay] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
 
-    const hoverOnWork = () => {
-        setWorkMenuDisplay(true)
-    }
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
-    const hoverOffWork = () => {
-        setWorkMenuDisplay(false)
-  }
+  const [picsAnchorEl, setPicsAnchorEl] = React.useState(null);
+  const openPics = Boolean(picsAnchorEl);
+  
+  const handleClickPics = (event) => {
+    setPicsAnchorEl(event.currentTarget);
+  };
+  const handleClosePics = () => {
+    setPicsAnchorEl(null);
+  };
 
-  const [picMenuDisplay, setPicMenuDisplay] = useState(false);
+  // const [workMenuDisplay, setWorkMenuDisplay] = useState(false);
 
-    const hoverOnPic = () => {
-        setPicMenuDisplay(true)
-    }
+  //   const hoverOnWork = () => {
+  //       setWorkMenuDisplay(true)
+  //   }
 
-    const hoverOffPic = () => {
-        setPicMenuDisplay(false)
-  }
+  //   const hoverOffWork = () => {
+  //       setWorkMenuDisplay(false)
+  // }
+
+  // const [picMenuDisplay, setPicMenuDisplay] = useState(false);
+
+  //   const hoverOnPic = () => {
+  //       setPicMenuDisplay(true)
+  //   }
+
+  //   const hoverOffPic = () => {
+  //       setPicMenuDisplay(false)
+  // }
 
 
   return (
@@ -41,16 +65,69 @@ function Navbar({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li className='nav-item' id="picnavbtn" title="Photos" onMouseEnter={hoverOnPic} onMouseLeave={hoverOffPic}>Photos
-            {
-              picMenuDisplay &&
-              <ul className='navdropmenu'>
-                <li><Dropdown.Item href="#Headshots" onClick={() => handlePageChange('Headshots')} className={currentPage === 'Photos' ? 'nav-link-active' : 'nav-link'}>Headshots</Dropdown.Item></li>
-                <li><Dropdown.Item href="#Gallery" onClick={() => handlePageChange('Gallery')} className={currentPage === 'Photos' ? 'nav-link-active' : 'nav-link'}>Gallery</Dropdown.Item></li>
-              </ul>
-            }
+          <li>
+            <div>
+              <Button
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClickPics}
+              >
+                Photos
+              </Button>
+              <Menu
+                id="basic-menu"
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+                sx={{'& .MuiPaper-root': {
+                  backgroundColor: 'transparent',
+                  boxShadow: 'none',
+                  border: 'none',
+                }}}
+                anchorEl={picsAnchorEl}
+                open={openPics}
+                onClose={handleClosePics}
+              >
+                <MenuItem className='menuitems' onClick={handleClosePics}>Headshots</MenuItem>
+                <MenuItem onClick={handleClosePics}>Gallery</MenuItem>
+              </Menu>
+            </div>
           </li>
-          <DropdownButton title="Work" className='nav-item' id='worknavbtn' onMouseEnter={hoverOnWork} onMouseLeave={hoverOffWork} key='down-centered' drop='down-centered'>
+          <li>
+            <div>
+              <Button
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+              >
+                Work
+              </Button>
+              <Menu
+                id="basic-menu"
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+                sx={{'& .MuiPaper-root': {
+                  backgroundColor: 'transparent',
+                  boxShadow: 'none',
+                  border: 'none'
+                }}}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+              >
+                <MenuItem className='menuitems' onClick={handleClose}>Resume</MenuItem>
+                <MenuItem onClick={handleClose}>Theater</MenuItem>
+                <MenuItem onClick={() => handlePageChange('FilmAndTV')}>Film and TV</MenuItem>
+                <MenuItem onClick={handleClose}>Voice Over</MenuItem>
+              </Menu>
+            </div>
+          </li>
+          {/* <DropdownButton title="Work" className='nav-item' id='worknavbtn' onMouseEnter={hoverOnWork} onMouseLeave={hoverOffWork} key='down-centered' drop='down-centered'>
               {
               workMenuDisplay &&
               <ul className='navdropmenu'>
@@ -60,7 +137,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 <li><Dropdown.Item href="#Voiceover" onClick={() => handlePageChange('VoiceOver')} className={currentPage === 'Work' ? 'nav-link-active' : 'nav-link'}>Voice Over</Dropdown.Item></li>
               </ul>
               }
-          </DropdownButton>
+          </DropdownButton> */}
         </ul>
       </div>
         <div className='navbarright'>

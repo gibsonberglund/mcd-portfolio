@@ -12,21 +12,42 @@ code {
     monospace;
 }
 
+.body {
+  background-color: rgb(81, 163, 163)
+}
+
 * {
-  background-color: rgb(61, 61, 61);
   color: white;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .headertitle {
   text-align: center;
+  font-family: 'Rowdies', cursive;
+  color: rgb(59, 53, 97);
   margin: 1%;
 }
 
 .subtitle {
   margin-left: 5%;
-  color: rgb(0, 203, 254);
+  color: rgb(234, 217, 76)
 }
+
+#basic-button {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 22px;
+}
+
+/* #fade-menu {
+  background-color: transparent;
+}
+
+.menuitems {
+  color: black;
+} */
 
 .navbarcontainer {
   display: flex;
@@ -36,7 +57,7 @@ code {
 
 .navbar {
   list-style: none;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -56,11 +77,22 @@ code {
   margin: 2%;
 }
 
-.nav-link-active {
-  color: rgb(0, 203, 254);
+.nav-link {
+  text-decoration: none;
+  color: rgb(59, 53, 97);
+  font-size: 22px;
 }
 
-.dropdownbtn {
+.nav-link-active {
+  color: rgb(234, 217, 76);
+}
+
+#basic-menu-pics {
+  top: 199px;
+left: 60px;
+}
+
+/* .dropdownbtn {
   border-radius: 5%;
   font-size: 14px;
 }
@@ -71,11 +103,11 @@ code {
 
 .navdropmenubtn {
   font-size: 18px;
-}
+} */
 
 .pagetitle {
   text-align: center;
-  color: rgb(0, 203, 254);
+  color: rgb(234, 217, 76);
 }
 
 .profilepic {
@@ -105,7 +137,7 @@ code {
 }
 
 .listitemdata {
-  color: rgb(0, 203, 254);
+  color: rgb(234, 217, 76);
 }
 
 .recentworkcontainer h2 {
@@ -117,7 +149,7 @@ code {
 }
 
 .workitemtitle {
-  color: rgb(0, 203, 254);
+  color: rgb(234, 217, 76);
   font-size: larger;
 }
 
@@ -126,7 +158,7 @@ code {
 }
 
 .workitem p {
-  color: rgb(0, 203, 254);
+  color: rgb(234, 217, 76)
 }
 
 .mainpic {

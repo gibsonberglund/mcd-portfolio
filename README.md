@@ -5,3 +5,5 @@ https://react-bootstrap.github.io/components/dropdowns/
 
 https://stackoverflow.com/questions/71700576/dropdown-menu-disappear-after-clicking-on-item
 
+FOR REFACTOR:
+Use global color definitions in CSS
