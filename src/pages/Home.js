@@ -7,9 +7,11 @@ import Press from './Press';
 import VoiceOver from './VoiceOver';
 import Writing from './Writing';
 import FilmAndTV from './FilmAndTV';
+import Resume from './Resume';
+import SplashPage from './SplashPage';
 
 function Home() {
-    const [currentPage, setCurrentPage] = useState('Bio');
+    const [currentPage, setCurrentPage] = useState('SplashPage');
   
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
@@ -31,7 +33,16 @@ function Home() {
       if (currentPage === 'VoiceOver') {
         return <VoiceOver />;
       }
-      return <Bio />;
+      if (currentPage === 'Resume') {
+        return <Resume />;
+      }
+      if (currentPage === 'Bio') {
+        return <Bio />;
+      }
+      if (currentPage === 'SplashPage') {
+        return <SplashPage />;
+      }
+      return <SplashPage />;
     }
 
 const handlePageChange = (page) => setCurrentPage(page);

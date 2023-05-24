@@ -31,27 +31,6 @@ function Navbar({ currentPage, handlePageChange }) {
     setPicsAnchorEl(null);
   };
 
-  // const [workMenuDisplay, setWorkMenuDisplay] = useState(false);
-
-  //   const hoverOnWork = () => {
-  //       setWorkMenuDisplay(true)
-  //   }
-
-  //   const hoverOffWork = () => {
-  //       setWorkMenuDisplay(false)
-  // }
-
-  // const [picMenuDisplay, setPicMenuDisplay] = useState(false);
-
-  //   const hoverOnPic = () => {
-  //       setPicMenuDisplay(true)
-  //   }
-
-  //   const hoverOffPic = () => {
-  //       setPicMenuDisplay(false)
-  // }
-
-
   return (
     <section className='navbarcontainer'>
       <div className='navbarleft'>
@@ -91,7 +70,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 onClose={handleClosePics}
               >
                 <MenuItem className='menuitems' onClick={handleClosePics}>Headshots</MenuItem>
-                <MenuItem onClick={handleClosePics}>Gallery</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('Gallery'); handleClosePics();}}>Gallery</MenuItem>
               </Menu>
             </div>
           </li>
@@ -120,9 +99,9 @@ function Navbar({ currentPage, handlePageChange }) {
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem className='menuitems' onClick={handleClose}>Resume</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('Resume'); handleClose();}}>Resume</MenuItem>
                 <MenuItem onClick={handleClose}>Theater</MenuItem>
-                <MenuItem onClick={() => handlePageChange('FilmAndTV')}>Film and TV</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('FilmAndTV'); handleClose();}}>Film and TV</MenuItem>
                 <MenuItem onClick={handleClose}>Voice Over</MenuItem>
               </Menu>
             </div>

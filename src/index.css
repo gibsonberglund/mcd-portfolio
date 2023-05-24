@@ -24,13 +24,24 @@ code {
 .headertitle {
   text-align: center;
   font-family: 'Rowdies', cursive;
+  letter-spacing: 3px;
   color: rgb(59, 53, 97);
   margin: 1%;
 }
 
 .subtitle {
   margin-left: 5%;
-  color: rgb(234, 217, 76)
+  color: rgb(234, 217, 76);
+}
+
+.splashpage {
+  display: flex;
+  justify-content: center;
+}
+
+.splashpage img {
+  width: 75%;
+  margin-top: -5%;
 }
 
 #basic-button {
@@ -79,7 +90,6 @@ code {
 
 .nav-link {
   text-decoration: none;
-  color: rgb(59, 53, 97);
   font-size: 22px;
 }
 
@@ -151,6 +161,7 @@ left: 60px;
 .workitemtitle {
   color: rgb(234, 217, 76);
   font-size: larger;
+  text-align: left;
 }
 
 .workitem {
@@ -166,6 +177,10 @@ left: 60px;
   margin: 2%;
 }
 
+.photogallery {
+  display: inline-block;
+}
+
 .showpic {
   max-height: 400px;
   margin: 2%;
@@ -173,12 +188,12 @@ left: 60px;
 
 .showtitle {
   margin-left: 2%;
-  color: rgb(0, 203, 254);
+  color:  rgb(234, 217, 76);
 }
 
 .showinfo {
   margin-left: 2%;
-  color: rgb(0, 203, 254);
+  color:  rgb(234, 217, 76);
 }
 
 .vidcontainer {
@@ -187,8 +202,12 @@ left: 60px;
 }
 
 .contactform {
-  display: block;
-  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.recentworkcontainer {
+  margin-top: 5%;
 }
 
 .smallinput {
@@ -208,10 +227,8 @@ left: 60px;
 }
 
 .submitbtn {
-  border: 3px solid rgb(49, 13, 49);
-  margin-left: 33%;
-  background-color: rgb(147, 114, 147);
-  padding: 1%;
+  display: flex;
+  justify-content: center;
 }
 
 .submitbtn:hover {
@@ -220,7 +237,7 @@ left: 60px;
 
 .footer {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 25%;
 }
 
 .footer p {
@@ -265,9 +282,6 @@ left: 60px;
   .workitemtitle {
     margin-left: 20%;
   }
-  .recentworkcontainer {
-    margin-top: 10%;
-  }
 
 }
 
@@ -281,13 +295,7 @@ left: 60px;
   .specslist {
     margin-top: -20%;
   }
-  .recentworkcontainer {
-    margin-top: 20%;
-  }
   .workitemtitle {
     margin-left: 25%;
-  }
-  .submitbtn {
-    margin-left: 36%;
   }
 }

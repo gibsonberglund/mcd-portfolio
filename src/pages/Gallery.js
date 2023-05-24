@@ -13,7 +13,7 @@ import Show2Pic3 from '../assets/images/mcd-beach-pic.jpg';
 function Gallery() {
 
     return (
-        <div className='contactform'>
+        <div className='photogallery'>
             <div className="proshotscontainer">
                 <h2 className="showtitle">Professional Shots</h2>
                 <div className="proshotspics">
