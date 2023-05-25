@@ -44,14 +44,18 @@ function Navbar({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li>
-            <div>
+          <li
+          onMouseOver={handleClickPics}
+          >
+            <div
+              onMouseOutCapture={handleClosePics}
+            >
               <Button
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
-                onClick={handleClickPics}
+
               >
                 Photos
               </Button>
@@ -67,7 +71,8 @@ function Navbar({ currentPage, handlePageChange }) {
                 }}}
                 anchorEl={picsAnchorEl}
                 open={openPics}
-                onClose={handleClosePics}
+                // 
+                // onClose={handleClosePics}
               >
                 <MenuItem className='menuitems' onClick={handleClosePics}>Headshots</MenuItem>
                 <MenuItem onClick={() => {handlePageChange('Gallery'); handleClosePics();}}>Gallery</MenuItem>

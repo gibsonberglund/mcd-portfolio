@@ -122,20 +122,21 @@ left: 60px;
 
 .profilepic {
   max-height: 300px;
-}
-
-.infocontainer {
-  margin-left: 10%;
+  position: absolute;
+  z-index: -1;
 }
 
 .picandbio {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .biotext {
   max-width: 90%;
+  color: black;
   font-weight: lighter;
+  margin-right: 32%;
+  font-size: 20px;
 }
 
 .specslist {
@@ -237,7 +238,7 @@ left: 60px;
 
 .footer {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 50%;
 }
 
 .footer p {
@@ -247,10 +248,6 @@ left: 60px;
 @media screen and (min-width: 430px) {
   .biotext {
     max-width: 60%;
-    margin-left: 20%;
-  }
-  .profilepic {
-    margin-left: 20%;
   }
   .specslist {
     margin-left: 25%;
@@ -260,20 +257,12 @@ left: 60px;
 @media screen and (min-width: 630px) {
   .biotext {
     max-width: 60%;
-    margin-left: 20%;
-  }
-  .profilepic {
-    margin-left: 25%;
   }
 }
 
 @media screen and (min-width: 812px) {
   .biotext {
     max-width: 45%;
-    margin-left: 5%;
-  }
-  .profilepic {
-    margin-left: 10%;
   }
   .specslist {
     margin-left: 10%;
