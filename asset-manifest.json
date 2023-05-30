@@ -1,24 +1,34 @@
 {
   "files": {
-    "main.css": "/mcd-portfolio/static/css/main.7f0d83ce.css",
-    "main.js": "/mcd-portfolio/static/js/main.9b4c2e59.js",
+    "main.css": "/mcd-portfolio/static/css/main.0e3f713c.css",
+    "main.js": "/mcd-portfolio/static/js/main.327025e3.js",
     "static/media/mcd-pub-vid.mp4": "/mcd-portfolio/static/media/mcd-pub-vid.822f1bf4d3ff75666172.mp4",
-    "static/media/MCD-portfoliopic.jpeg": "/mcd-portfolio/static/media/MCD-portfoliopic.4f90655862875199a136.jpeg",
+    "static/media/dechar.jpg": "/mcd-portfolio/static/media/dechar.0317fdd9808b1663754b.jpg",
+    "static/media/druidshot2.jpg": "/mcd-portfolio/static/media/druidshot2.d6a5b5fdeed913090371.jpg",
     "static/media/crazy-canoe-pic.jpg": "/mcd-portfolio/static/media/crazy-canoe-pic.f2f1bf152b590c66284a.jpg",
     "static/media/scary-canoe-pic.jpg": "/mcd-portfolio/static/media/scary-canoe-pic.5671484f02a58fd16d2f.jpg",
+    "static/media/beekeeper.jpg": "/mcd-portfolio/static/media/beekeeper.f18cbea584b6001edbfc.jpg",
     "static/media/mcd-fred-boat-pic.jpg": "/mcd-portfolio/static/media/mcd-fred-boat-pic.64b511ff74f28169b63f.jpg",
     "static/media/mcd-druid-pic.jpg": "/mcd-portfolio/static/media/mcd-druid-pic.93f6ef85a2ca3ee9841a.jpg",
+    "static/media/biopic.jpg": "/mcd-portfolio/static/media/biopic.3a1f07a411608160e5b5.jpg",
+    "static/media/ivandbon.jpg": "/mcd-portfolio/static/media/ivandbon.9361302a3d2bdf7d925a.jpg",
     "static/media/mcd-grainy-pic.jpg": "/mcd-portfolio/static/media/mcd-grainy-pic.eaa6cf6b91c7b9e90642.jpg",
     "static/media/mcd-beach-pic.jpg": "/mcd-portfolio/static/media/mcd-beach-pic.9d48b7b5fb9666bed693.jpg",
     "static/media/mcd-formal-pic.jpg": "/mcd-portfolio/static/media/mcd-formal-pic.90541147e7315b5fecb0.jpg",
+    "static/media/bookcover-chaldeep.jpg": "/mcd-portfolio/static/media/bookcover-chaldeep.d54e0ee55c900a9af319.jpg",
+    "static/media/rearview.jpg": "/mcd-portfolio/static/media/rearview.25066fe659d8da676adb.jpg",
+    "static/media/celtic-3.png": "/mcd-portfolio/static/media/celtic-3.f86acd2491f286b20e3b.png",
+    "static/media/mcd-splash.jpg": "/mcd-portfolio/static/media/mcd-splash.58bb57896b6dbeaeb5f5.jpg",
+    "static/media/celtic-2.png": "/mcd-portfolio/static/media/celtic-2.0afa9f1dc2faee1607c0.png",
     "static/media/sandbox-cabin-trip.jpg": "/mcd-portfolio/static/media/sandbox-cabin-trip.2dc79635339e6c983bfb.jpg",
+    "static/media/imdb-logo.png": "/mcd-portfolio/static/media/imdb-logo.fe3e9513d02659d08fd3.png",
     "static/media/logo.svg": "/mcd-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mcd-portfolio/index.html",
-    "main.7f0d83ce.css.map": "/mcd-portfolio/static/css/main.7f0d83ce.css.map",
-    "main.9b4c2e59.js.map": "/mcd-portfolio/static/js/main.9b4c2e59.js.map"
+    "main.0e3f713c.css.map": "/mcd-portfolio/static/css/main.0e3f713c.css.map",
+    "main.327025e3.js.map": "/mcd-portfolio/static/js/main.327025e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f0d83ce.css",
-    "static/js/main.9b4c2e59.js"
+    "static/css/main.0e3f713c.css",
+    "static/js/main.327025e3.js"
   ]
 }
