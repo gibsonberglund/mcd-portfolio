@@ -9,6 +9,8 @@ import Writing from './Writing';
 import FilmAndTV from './FilmAndTV';
 import Resume from './Resume';
 import SplashPage from './SplashPage';
+import Headshots from './Headshots';
+import Theater from './Theater';
 
 function Home() {
     const [currentPage, setCurrentPage] = useState('SplashPage');
@@ -41,6 +43,12 @@ function Home() {
       }
       if (currentPage === 'SplashPage') {
         return <SplashPage />;
+      }
+      if (currentPage === 'Headshots') {
+        return <Headshots />;
+      }
+      if (currentPage === 'Theater') {
+        return <Theater />;
       }
       return <SplashPage />;
     }

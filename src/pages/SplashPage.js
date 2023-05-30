@@ -4,7 +4,7 @@ import SplashPic from "../assets/images/mcd-splash.jpg";
 function Splash() {
     return (
         <div className="splashpage">
-            <img src={SplashPic}></img>
+            <img className="w3-animate-opacity" src={SplashPic}></img>
         </div>
     )
 }

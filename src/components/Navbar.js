@@ -44,18 +44,14 @@ function Navbar({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li
-          onMouseOver={handleClickPics}
-          >
-            <div
-              onMouseOutCapture={handleClosePics}
-            >
+          <li>
+            <div>
               <Button
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
-
+                onClick={handleClickPics}
               >
                 Photos
               </Button>
@@ -71,11 +67,10 @@ function Navbar({ currentPage, handlePageChange }) {
                 }}}
                 anchorEl={picsAnchorEl}
                 open={openPics}
-                // 
-                // onClose={handleClosePics}
+                onClose={handleClosePics}
               >
-                <MenuItem className='menuitems' onClick={handleClosePics}>Headshots</MenuItem>
-                <MenuItem onClick={() => {handlePageChange('Gallery'); handleClosePics();}}>Gallery</MenuItem>
+                <MenuItem className='menuitems' onClick={() => {handlePageChange('Headshots'); handleClosePics();}}>Headshots</MenuItem>
+                <MenuItem className='menuitems' onClick={() => {handlePageChange('Gallery'); handleClosePics();}}>Gallery</MenuItem>
               </Menu>
             </div>
           </li>
@@ -105,23 +100,12 @@ function Navbar({ currentPage, handlePageChange }) {
                 onClose={handleClose}
               >
                 <MenuItem onClick={() => {handlePageChange('Resume'); handleClose();}}>Resume</MenuItem>
-                <MenuItem onClick={handleClose}>Theater</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('Theater'); handleClose();}}>Theater</MenuItem>
                 <MenuItem onClick={() => {handlePageChange('FilmAndTV'); handleClose();}}>Film and TV</MenuItem>
-                <MenuItem onClick={handleClose}>Voice Over</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('VoiceOver'); handleClose();}}>Voice Over</MenuItem>
               </Menu>
             </div>
           </li>
-          {/* <DropdownButton title="Work" className='nav-item' id='worknavbtn' onMouseEnter={hoverOnWork} onMouseLeave={hoverOffWork} key='down-centered' drop='down-centered'>
-              {
-              workMenuDisplay &&
-              <ul className='navdropmenu'>
-                <li><Dropdown.Item href="#Theater" onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link-active' : 'nav-link'}>Resume</Dropdown.Item></li>
-                <li><Dropdown.Item href="#Theater" onClick={() => handlePageChange('Theater')} className={currentPage === 'Work' ? 'nav-link-active' : 'nav-link'}>Theater</Dropdown.Item></li>
-                <li><Dropdown.Item href="#FilmAndTV" onClick={() => handlePageChange('FilmAndTV')} className={currentPage === 'Work' ? 'nav-link-active' : 'nav-link'}>Film And TV</Dropdown.Item></li>
-                <li><Dropdown.Item href="#Voiceover" onClick={() => handlePageChange('VoiceOver')} className={currentPage === 'Work' ? 'nav-link-active' : 'nav-link'}>Voice Over</Dropdown.Item></li>
-              </ul>
-              }
-          </DropdownButton> */}
         </ul>
       </div>
         <div className='navbarright'>
