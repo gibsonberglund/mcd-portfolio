@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,7 +15,11 @@ code {
 }
 
 .body {
-  background-color: rgb(81, 163, 163)
+  background-color: rgb(86, 146, 116)
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .body h2 {
@@ -39,6 +45,9 @@ code {
 .headercontainer {
   display: flex;
   justify-content: center;
+  background-image: url(../src/assets/images/celtic-banner-texture.jpg);
+  background-size: cover;
+  height: 150px;
   margin-top: 2%;
 }
 
@@ -46,8 +55,11 @@ code {
   text-align: center;
   font-family: 'Rowdies', cursive;
   letter-spacing: 3px;
-  color: rgb(59, 53, 97);
+  font-size: 42px;
+  /* color: rgb(59, 53, 97); */
   margin: 1%;
+  margin-top: 7%;
+  width: 100%;
 }
 
 .subtitle {
@@ -57,9 +69,7 @@ code {
 
 .headericon {
   width: 96px;
-  margin: 5%;
-    margin-top: 5%;
-  margin-top: 1%;
+  margin: 1%;
 }
 
 .splashpage {
@@ -69,6 +79,7 @@ code {
 
 .splashpage img {
   width: 75%;
+  margin-bottom: 10%;
 }
 
 #basic-button {
@@ -89,7 +100,7 @@ code {
 
 .navbarcontainer {
   display: flex;
-  margin-top: -11%;
+  margin-top: -8%;
   margin-bottom: 8%;
 }
 
@@ -103,12 +114,12 @@ code {
 }
 
 .navbarleft {
-  width: 33%;
+  width: 25%;
 }
 
 .navbarright {
-  width: 33%;
-  margin-left: 33%;
+  width: 25%;
+  margin-left: 50%;
 }
 
 .nav-item {
@@ -138,7 +149,7 @@ left: 60px;
   max-height: 300px;
   position: absolute;
   z-index: -1;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   box-shadow: 10px 10px 10px rgb(42, 84, 84);
 }
 
@@ -157,6 +168,10 @@ left: 60px;
   line-height: normal;
 }
 
+.buffer {
+  height: 400px;
+}
+
 .specslist {
   list-style: none;
 }
@@ -167,6 +182,12 @@ left: 60px;
 
 .listitemdata {
   color: rgb(234, 217, 76);
+}
+
+.workcontainer {
+  background-image: url(../src/assets/images/celt-texture-3.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .recentworkcontainer h2 {
@@ -309,7 +330,9 @@ left: 60px;
 
 .footer {
   text-align: center;
-  margin-top: 20%;
+  height: 150px;
+  background-image: url(../src/assets/images/celtic-texture-2.jpg);
+  background-size: cover;
 }
 
 .footer a {

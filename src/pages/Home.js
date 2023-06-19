@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Bio from './Bio';
 import Gallery from './Gallery';
 import Contact from './Contact';
-import Press from './Press';
 import VoiceOver from './VoiceOver';
 import Writing from './Writing';
 import FilmAndTV from './FilmAndTV';
@@ -14,6 +13,8 @@ import Theater from './Theater';
 
 function Home() {
     const [currentPage, setCurrentPage] = useState('SplashPage');
+
+    const handlePageChange = (page) => setCurrentPage(page);
   
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
@@ -29,9 +30,6 @@ function Home() {
       if (currentPage === 'FilmAndTV') {
         return <FilmAndTV />;
       }
-      if (currentPage === 'Press') {
-        return <Press />;
-      }
       if (currentPage === 'VoiceOver') {
         return <VoiceOver />;
       }
@@ -42,7 +40,7 @@ function Home() {
         return <Bio />;
       }
       if (currentPage === 'SplashPage') {
-        return <SplashPage />;
+        return <SplashPage handlePageChange={handlePageChange}/>;
       }
       if (currentPage === 'Headshots') {
         return <Headshots />;
@@ -50,10 +48,10 @@ function Home() {
       if (currentPage === 'Theater') {
         return <Theater />;
       }
-      return <SplashPage />;
+      return <SplashPage handlePageChange={handlePageChange}/>;
     }
 
-const handlePageChange = (page) => setCurrentPage(page);
+
 
 return (
     <div>

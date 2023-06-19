@@ -38,7 +38,7 @@ function Navbar({ currentPage, handlePageChange }) {
           <li className="nav-item">
             <a
               href="#Bio"
-              onClick={() => handlePageChange('Bio')}
+              onClick={() => handlePageChange('SplashPage')}
               className={currentPage === 'Bio' ? 'nav-link-active' : 'nav-link'}
             >
               About
@@ -99,7 +99,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem onClick={() => {handlePageChange('Resume'); handleClose();}}>Resume</MenuItem>
+                <MenuItem onClick={() => {handlePageChange('Writing'); handleClose();}}>Writing</MenuItem>
                 <MenuItem onClick={() => {handlePageChange('Theater'); handleClose();}}>Theater</MenuItem>
                 <MenuItem onClick={() => {handlePageChange('FilmAndTV'); handleClose();}}>Film and TV</MenuItem>
                 <MenuItem onClick={() => {handlePageChange('VoiceOver'); handleClose();}}>Voice Over</MenuItem>
@@ -112,22 +112,12 @@ function Navbar({ currentPage, handlePageChange }) {
           <ul className='navbar'>
             <li className="nav-item">
               <a
-                href="#Press"
-                onClick={() => handlePageChange('Press')}
+                href="#Contact"
+                onClick={() => handlePageChange('Resume')}
                 // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                className={currentPage === 'Press' ? 'nav-link-active' : 'nav-link'}
+                className={currentPage === 'Contact' ? 'nav-link-active' : 'nav-link'}
               >
-                Press
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Writing"
-                onClick={() => handlePageChange('Writing')}
-                // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                className={currentPage === 'Writing' ? 'nav-link-active' : 'nav-link'}
-              >
-                Writing
+                Resume
               </a>
             </li>
             <li className="nav-item">
