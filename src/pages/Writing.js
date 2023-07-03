@@ -1,10 +1,11 @@
 import React from "react";
+// import { Document } from 'react-pdf';
 
 function Writing() {
 
     return (
         <div className='contactform'>
-            <p>Writing page</p>
+            <p>Writing Page</p>
         </div>
     )
 

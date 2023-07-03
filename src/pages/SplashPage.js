@@ -78,17 +78,29 @@ function Splash({handlePageChange, aboutSection}) {
                     <h1 className="pagetitle">Work</h1>
                     <div className="workbuttons">
                         <div className="workbuttonsRow1" style={{display: "flex", justifyContent: "space-evenly", margin: "2%"}}>
-                            <Button id="workbuttonleft" variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white',  fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('Writing');}}>Writing</Button>
+                            <Button id="workbuttonleft" variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white',  fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('Writing');}}>
+                                Writing
+                            </Button>
                             {/* <img style={{height: '200px', position: 'absolute', marginTop: '-3%'}} src={Celtic2}></img> */}
                             <div className="workbuttonsRow3" style={{display: "flex", justifyContent: "center", margin: "2%"}}>
-                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', border: '1px solid rgb(234, 217, 76)', color: "white", fontFamily: 'Josefin Sans', fontSize: '14px', margin: '1%'}} onClick={() => {handlePageChange('Resume');}}>Resume</Button>
-                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', border: '1px solid rgb(234, 217, 76)', color: "white", fontFamily: 'Josefin Sans', fontSize: '14px', margin: '1%'}} onClick={() => {handlePageChange('Headshots');}}>Headshots</Button>
+                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', border: '1px solid rgb(234, 217, 76)', color: "white", fontFamily: 'Josefin Sans', fontSize: '14px', margin: '1%'}} onClick={() => {handlePageChange('Resume');}}>
+                                Resume
+                            </Button>
+                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', border: '1px solid rgb(234, 217, 76)', color: "white", fontFamily: 'Josefin Sans', fontSize: '14px', margin: '1%'}} onClick={() => {handlePageChange('Headshots');}}>
+                                Headshots
+                            </Button>
                             </div>
-                            <Button id="workbuttonright" variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('FilmAndTV');}}>Film and TV</Button>
+                            <Button id="workbuttonright" variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('FilmAndTV');}}>
+                                Film and TV
+                            </Button>
                         </div>
                         <div className="workbuttonsRow2" style={{display: "flex", justifyContent: "center", margin: "2%"}}>
-                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)', margin: '1%'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('Voice Over');}}>Voice Over</Button>
-                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)', margin: '1%'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('Theater');}}>Theater</Button>
+                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)', margin: '1%'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('VoiceOver');}}>
+                                Voice Over
+                            </Button>
+                            <Button variant="outlined" sx={{backgroundColor: 'rgb(161, 129, 49)', color: 'white', fontFamily: 'Josefin Sans', fontSize: '22px', border: '1px solid rgb(234, 217, 76)', margin: '1%'}} style={{width: "200px", height: "75px"}} onClick={() => {handlePageChange('Theater');}}>
+                                Theater
+                            </Button>
                         </div>
 
                     </div>
