@@ -9,6 +9,8 @@ https://stackoverflow.com/questions/71700576/dropdown-menu-disappear-after-click
 https://www.npmjs.com/package/react-image-gallery
 
 
+https://relatablecode.com/how-to-make-a-navbar-with-react-scroll
+
 
 FOR REFACTOR:
 Use global color definitions in CSS

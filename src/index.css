@@ -15,7 +15,7 @@ code {
 }
 
 .body {
-  background-color: rgb(86, 146, 116)
+  background-color: rgb(75, 126, 101)
 }
 
 h1 {
@@ -188,6 +188,19 @@ left: 60px;
   background-image: url(../src/assets/images/celt-texture-3.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#workbuttonleft {
+  margin-right: -18%;
+}
+
+#workbuttonright {
+  margin-left: -18%;
+}
+
+
+.imageCarousel {
+  margin: 10%;
 }
 
 .recentworkcontainer h2 {
