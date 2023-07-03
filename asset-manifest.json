@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/mcd-portfolio/static/css/main.0e3f713c.css",
-    "main.js": "/mcd-portfolio/static/js/main.327025e3.js",
+    "main.css": "/mcd-portfolio/static/css/main.78aaf7d1.css",
+    "main.js": "/mcd-portfolio/static/js/main.e3e5cc81.js",
     "static/media/mcd-pub-vid.mp4": "/mcd-portfolio/static/media/mcd-pub-vid.822f1bf4d3ff75666172.mp4",
+    "static/media/celt-texture-3.jpg": "/mcd-portfolio/static/media/celt-texture-3.a4f6d8a33de21a6b5a21.jpg",
     "static/media/dechar.jpg": "/mcd-portfolio/static/media/dechar.0317fdd9808b1663754b.jpg",
+    "static/media/celtic-texture-2.jpg": "/mcd-portfolio/static/media/celtic-texture-2.2b828f4dcecee0b81d44.jpg",
+    "static/media/celtic-banner-texture.jpg": "/mcd-portfolio/static/media/celtic-banner-texture.66a2741ef4e32b41bd82.jpg",
     "static/media/druidshot2.jpg": "/mcd-portfolio/static/media/druidshot2.d6a5b5fdeed913090371.jpg",
     "static/media/crazy-canoe-pic.jpg": "/mcd-portfolio/static/media/crazy-canoe-pic.f2f1bf152b590c66284a.jpg",
     "static/media/scary-canoe-pic.jpg": "/mcd-portfolio/static/media/scary-canoe-pic.5671484f02a58fd16d2f.jpg",
@@ -22,13 +25,15 @@
     "static/media/celtic-2.png": "/mcd-portfolio/static/media/celtic-2.0afa9f1dc2faee1607c0.png",
     "static/media/sandbox-cabin-trip.jpg": "/mcd-portfolio/static/media/sandbox-cabin-trip.2dc79635339e6c983bfb.jpg",
     "static/media/imdb-logo.png": "/mcd-portfolio/static/media/imdb-logo.fe3e9513d02659d08fd3.png",
+    "static/media/mcd-grainy-pic-thumb.jpg": "/mcd-portfolio/static/media/mcd-grainy-pic-thumb.8119eaa3bf293c99a57d.jpg",
+    "static/media/mcd-fred-boat-pic-thumb.jpg": "/mcd-portfolio/static/media/mcd-fred-boat-pic-thumb.a3d6c6ae7351b17f0a42.jpg",
     "static/media/logo.svg": "/mcd-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mcd-portfolio/index.html",
-    "main.0e3f713c.css.map": "/mcd-portfolio/static/css/main.0e3f713c.css.map",
-    "main.327025e3.js.map": "/mcd-portfolio/static/js/main.327025e3.js.map"
+    "main.78aaf7d1.css.map": "/mcd-portfolio/static/css/main.78aaf7d1.css.map",
+    "main.e3e5cc81.js.map": "/mcd-portfolio/static/js/main.e3e5cc81.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e3f713c.css",
-    "static/js/main.327025e3.js"
+    "static/css/main.78aaf7d1.css",
+    "static/js/main.e3e5cc81.js"
   ]
 }
